@@ -7,7 +7,7 @@ services:
       dockerfile: python.Dockerfile
     command: bash -c "python app.py"
     ports:
-      - "8000:8000"
+      - "8070:8000"
     volumes:
       - ".:/university-domains-list-api"
     tty: true
