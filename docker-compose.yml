@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: python.Dockerfile
-    command: python /university-domains-list-api/app.py
+    command: bash -c "python app.py"
     ports:
       - "8070:8000"
     volumes:
