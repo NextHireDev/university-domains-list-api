@@ -5,10 +5,10 @@ services:
     build:
       context: .
       dockerfile: python.Dockerfile
-    command: bash -c "python app.py"
+    command: python /university-domains-list-api/app.py
     ports:
       - "8070:8000"
     volumes:
-      - ".:/university-domains-list-api"
+      - ./:/university-domains-list-api:ro
     tty: true
     restart: unless-stopped
