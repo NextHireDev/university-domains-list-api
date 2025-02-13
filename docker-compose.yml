@@ -9,6 +9,6 @@ services:
     ports:
       - "8070:8000"
     volumes:
-      - ./:/university-domains-list-api:ro
+      - ./:/university-domains-list-api
     tty: true
     restart: unless-stopped
